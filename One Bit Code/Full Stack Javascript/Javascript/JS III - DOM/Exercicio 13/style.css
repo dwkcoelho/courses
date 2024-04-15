@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #f1f5f9;
+    --primary-color: #4dff91;
+    --turn-color: #ff0043;
+  }
+
+  body{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-top: 4rem;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  section {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  section:first-child ul:first-child {
+    margin: 0 auto;
+  }
+  
+  section:first-child li:nth-child(2) {
+    text-align:center;
+    margin-top: 1.5rem;
+  }
+
+  section:first-child li:nth-child(2) input + input {
+    margin-left: 9rem;
+  }
+
+
+  section:first-child ul:first-child li:last-child {
+    text-align: center;
+    margin: 1.3rem;
+  }
+
+  button {
+    padding: 0.3rem;
+    width: 2.5rem;
+  }
+
+  button + button {
+    margin-left: 2rem;
+  }
+
+  .themeSwitcher {
+    display: block;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 1.2rem;
+    margin: 1rem;
+    border: none;
+  }
+
+  .player-name {
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+  }
+
+  .turn {
+    color: var(--turn-color);
+  }
+
+  .score {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .input {
+    width: 8rem;
+    height: 8rem;
+    margin: 0.3rem;
+    padding-bottom:1.5rem;
+    background-color: var(--primary-color);
+    border: 2px solid --border-color;
+    font-size: 10rem;
+    text-align: center;
+    color: var(--bg-color);
+  }
+  

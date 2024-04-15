@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- JS -->
+
+    <script src="/script.js" defer></script>
+
+    <title>Exercicio 13</title>
+</head>
+<body class="is-x">
+    <button type="button" class="themeSwitcher" id="light"><i class="bi bi-brightness-high"></i></button>
+    <main>
+        <section>
+            <ul>
+                <li>
+                    <input type="text" class="player-name" id="player-o" placeholder="Player 1">
+                    <input type="text" class="player-name" id="player-x" placeholder="Player 2">
+                </li>
+                <li>
+                    <input type="text" id="firstPlayer" class="score" value="0" disabled>
+                    <input type="text" id="secondPlayer" class="score" value="0" disabled>
+                </li>
+                <li>
+                    <button type="button" id="ok">Ok</button>
+                    <button type="button" id='restart'><i class="bi bi-arrow-clockwise"></i></button>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul id="board">
+                <li>
+                    <input type="text" id="0" class="input" data-value="" onread>
+                    <input type="text" id="1" class="input" data-value="" onread>
+                    <input type="text" id="2" class="input" data-value="" onread>
+                </li>
+                <li>
+                    <input type="text" id="3" class="input" data-value="" onread>
+                    <input type="text" id="4" class="input" data-value="" onread>
+                    <input type="text" id="5" class="input" data-value="" onread>
+                </li>
+                <li>
+                    <input type="text" id="6" class="input" data-value="" onread>
+                    <input type="text" id="7" class="input" data-value="" onread>
+                    <input type="text" id="8" class="input" data-value="" onread>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <button type="button" class="themeSwitcher" id="dark"><i class="bi bi-moon"></i></button>
+</body>
+</html>

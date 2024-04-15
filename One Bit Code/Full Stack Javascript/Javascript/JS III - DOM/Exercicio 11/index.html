@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <header>
+        <h1>Team</h1>
+        <hr>
+    </header>
+
+    <section>
+        <h2>Pick a player:</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="number">Number:</label><br>
+        <input type="text" name="number" id="number"><br>
+        <label for="position">Position:</label><br>
+        <input type="text" name="position" id="position"><br>
+
+        <button onclick="newPlayer()">Enter</button>
+    </section>
+
+    <section>
+        <h2>Remove a player:</h2>
+        <label for="numberToRemove">Number:</label><br>
+        <input type="text" name="numberToRemove" id="numberToRemove"><br>
+        <button onclick="removePlayer()">Delete</button><br>
+    </section>
+
+    <section id="playersList">
+
+    </section>
+    
+    <script src="/script.js"></script><br>
+</body>
+</html>
