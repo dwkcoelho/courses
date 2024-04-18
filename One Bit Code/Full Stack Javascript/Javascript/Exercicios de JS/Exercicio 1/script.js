@@ -1,0 +1,5 @@
+alert('Welcome! Next we will ask you to provide some information')
+const name = prompt('What is your name?')
+const age = prompt('How old are you?')
+const confirmAge = confirm(`Do you confirm your age? \nYou are ${age} years old`)
+alert(`Name: ${name}\nAge: ${age}\nAge confirmed: ${confirmAge}`)
