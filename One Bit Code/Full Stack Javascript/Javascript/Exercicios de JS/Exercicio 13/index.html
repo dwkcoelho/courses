@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/property.js" defer></script> 
+    <script src="/app.js" defer></script>
+    <script src="/main.js" defer></script>
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <h3>Property Registration</h3>
+
+    <form onsubmit="app.addProperty()">
+        <p>
+            <label>Type: </label>
+            <select name="kind">
+                <option value="Apartment">Apartment</option>
+                <option value="House">House</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Area</label>
+            <input type="number" name="area" step="any" min="0">
+        </p>
+        
+        <p>
+            <input type="checkbox" name="rented"> Alugado
+        </p>
+
+        <button type="submit">Save</button>
+        <button type="button" onclick="app.cleanForm()">Clean</button>
+    </form>
+
+    <br>
+
+    <h3>Properties Registred</h3>
+
+    <ul id="properties"></ul>
+    
+</body>
+</html>
