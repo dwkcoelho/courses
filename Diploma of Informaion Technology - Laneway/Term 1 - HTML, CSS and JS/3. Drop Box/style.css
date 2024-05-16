@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
+.main-title {
+  font-size: 55px;
+  font-weight: 200;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0.3em;
+}
+
+#arrow {
+  font-size: 35px;
+}
+.main-subtitle {
+  font-size: 23px;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1.5em;
+}
+
+.main-link-plans {
+  font-size: 22px;
+  text-decoration: underline;
+  font-weight: 600;
+}

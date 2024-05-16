@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 320px) {
+
+/* HEADER */
+
+.header-bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.header-img {
+  margin: 0px auto;
+}
+
+.logo-img {
+  width: 200px;
+}
+
+.header-buttons {
+  margin: 10px auto 5px auto;
+}
+
+.link-page {
+margin: 0px 5px;
+text-decoration: none;
+color: #000000;
+font-size: 0.7em;
+font-family: "Libre Franklin", sans-serif;
+font-weight: 500;
+}
+
+.link-page:hover {
+  font-weight: bold;
+  color: #000000;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* HOME */
+
+.img-carousel {
+  height: 300px;
+}
+
+/* OUR STORY */
+
+.mainly-content-ourstory {
+  background-color: #000000;
+  padding-bottom: 30px;
+}
+
+.ourstory-row {
+  padding-top: 30px;
+}
+
+.description-ourstory {
+  font-family: "Libre Franklin", sans-serif;
+  color: #ffffff;
+  padding-bottom: 15px;
+  font-size: 0.7em;
+  text-align:center;
+  line-height: 1.4rem;
+  font-style: italic;
+}
+
+.img-ourstory {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+/* SUSHI PLATTERS */
+
+.mainly-content-sushiplatters {
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sushiplatters-card
+{
+  padding-bottom: 20px;
+}
+
+
+/* CONTACT US */
+
+.mainly-content-contactus {
+  background-color: #000000;
+  padding-bottom: 50px;
+}
+
+.title-subsection-contactus {
+  font-family: "Alegreya", serif;
+  color: #ffffff;
+  margin-top: 30px;
+  padding-bottom: 20px;;
+}
+
+.description-contactus {
+  font-family: "Libre Franklin", sans-serif;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.google-maps {
+  width: auto;
+}
+
+.form-titles {
+  font-family: "Libre Franklin", sans-serif;
+  color: #ffffff;
+  padding-bottom: 1.3em;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 0.8rem;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.form-message {
+  width: 295px;
+}
+
+.bottom-form {
+  margin-top: 20px;
+} 
+
+/* FOOTER  */
+.footer-text {
+  font-size: 0.9em;
+}
+  }
+
+@media (min-width: 375px) {
+
+
+  /* HEADER */
+
+.logo-img {
+    width: 230px;
+  }
+  
+.link-page {
+  font-size: 0.8em;
+  }
+  
+  /* OUR STORY */
+
+.description-ourstory {
+  font-size: 0.9em;
+}
+
+.img-ourstory {
+  width: 300px;
+  height: 300px;
+}
+
+  /* SUSHIPLATTERS  */
+
+.sushiplatters-card
+{
+  margin-left: 28px;
+}
+
+  /* CONTACT US */
+
+.description-contactus {
+  font-size: 0.9em;
+}
+
+.google-maps {
+  width: 350px;
+}
+
+.form-message {
+  width: 350px;
+}
+  }
+
+@media (min-width: 425px) {
+
+  /* HEADER */
+
+  .logo-img {
+    width: 250px;
+  }
+  
+.link-page {
+  font-size: 0.9em;
+  }
+
+  /* OUR STORY  */
+
+.img-ourstory {
+  width: 355px;
+}
+  /* SUSHIPLATTERS  */
+
+.sushiplatters-card
+{
+  margin-left: 50px;
+}
+
+  /* CONTACT US */
+  .google-maps {
+    width: 400px;
+  }
+  
+  .form-message {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  
+  /* HEADER */
+
+.logo-img {
+    width: 280px;
+  }
+  
+.link-page {
+  font-size: 1em;
+  }
+
+  /* OURSTORY */
+
+.img-ourstory {
+   padding-right: 15px;
+  }
+
+  /* SUSHIPLATTERS */
+
+.sushiplatters-card
+{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+/* CONTACT US */
+
+.google-maps {
+  width: 690px;
+}
+
+.form-message {
+  width: 690px;
+}
+
+/* FOOTER */
+
+.footer-text {
+  font-size: 1em;
+}
+  }
+
+@media (min-width: 1024px) {
+
+/* HEADER */
+
+.logo-img {
+  width: 350px;
+}
+
+.header-buttons {
+  margin: 20px auto 10px auto;
+}
+
+.link-page {
+  margin: 0px 20px;
+  font-size: 1.1em;
+} 
+
+/* HOME */
+
+.img-carousel {
+  height: 500px;
+}
+
+/* OUR STORY */
+
+.description-ourstory {
+  padding: 20px;
+  font-size: 1em;
+  line-height: 3rem;
+}
+
+.img-ourstory {
+  width: 400px;
+  height: 450px;
+}
+
+/* SUSHI PLATTERS */
+
+.mainly-content-sushiplatters {
+  padding: 30px;
+}
+
+.sushiplatters-card
+{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* CONTACT US */
+
+.form-titles {
+  padding: 15px;
+  font-size: 1.3em;
+  line-height: 2.5em;
+}
+
+.bottom-form {
+  margin-top: 30px;
+}
+
+
+.google-maps {
+  width: 400px;
+}
+
+.form-message {
+  width: 450px;
+}
+  }
+
+@media (min-width: 1440px) {
+
+/* HEADER */
+
+.logo-img {
+  width: 380px;
+}
+
+.link-page {
+  font-size: 1.3em;
+} 
+
+/* OUR STORY */
+
+.ourstory-row {
+  padding-bottom: 20px;
+}
+
+.description-ourstory {
+  font-size: 1.3em;
+  line-height: 3rem;
+}
+
+.img-ourstory {
+  width: 500px;
+  height: 450px;
+}
+
+/* SUSHI PLATTERS */
+
+.row-sushiplatters
+{
+  padding-left: 75px;
+}
+
+/* CONTACT US */
+
+.description-contactus {
+  font-size: 1.1em;
+}
+.google-maps {
+  width: 570px;
+}
+
+.form-message {
+  width: 630px;
+}
+  }

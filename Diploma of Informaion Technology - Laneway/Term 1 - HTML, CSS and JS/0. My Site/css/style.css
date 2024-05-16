@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sixtyfour&family=Spectral:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Spectral", serif;
+}
+
+.top-container {
+  background-color: #26fefe;
+  position: relative;
+}
+
+#top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 30px;
+}
+
+#bottom-cloud {
+  position: absolute;
+}
+
+h1 {
+  font-family: "Sixtyfour", sans-serif;
+  padding: 30px;
+  font-size: 5.5rem;
+  margin: 50 0 0 0;
+  padding: 100px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.img-profile {
+  border: 2px solid;
+  border-radius: 15%;
+  width: 150px;
+  height: 150px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 180px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill-img {
+  margin: 0 30px 30px 0;
+  width: 25%;
+  float: left;
+}
+
+.social-icons {
+  width: 15px;
+  height: 15px;
+}

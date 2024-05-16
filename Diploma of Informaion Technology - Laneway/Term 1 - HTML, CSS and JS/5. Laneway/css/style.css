@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(13, 13, 190);
+}
+
+.nav-container {
+  padding: 10px;
+}
+
+.main-container {
+  margin-top: 0px;
+}
+
+.laneway-row {
+  background-color: rgb(63, 164, 184);
+  border: solid black;
+}
+.mainly-title {
+  font-size: 3em;
+}
+.mainly-description {
+  font-size: 1.3em;
+}
+.img-laneway {
+  max-width: 95%;
+  height: 90%;
+}
+
+.subject-row {
+  background-color: rgb(0, 170, 99);
+}
+
+.subject-col {
+  border: solid black;
+}

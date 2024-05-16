@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.container-header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-buttons {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 5px;
+  color: #000000;
+}
+
+.header-buttons:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* MAIN SECTION */
+main {
+  margin: 30px;
+}
+
+/* PERSONAL INFORMATION */
+.personal-information {
+  display: flex;
+  align-items: center;
+}
+
+#profile-picture {
+  border-radius: 15%;
+  background-color: none;
+}
+
+.personal-description {
+  margin: 10px;
+}
+
+.personal-description,
+h1,
+p {
+  margin: 10px;
+}
+
+/* EDUCATION AND JOB INFORMATION */
+
+.education,
+.job {
+  margin: 15px;
+}
+
+.education,
+h3 {
+  margin-left: -20px;
+}
+.list-style,
+li {
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+/* LINE */
+.border-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #808080;
+  font-weight: 800;
+  font-size: 40px;
+}

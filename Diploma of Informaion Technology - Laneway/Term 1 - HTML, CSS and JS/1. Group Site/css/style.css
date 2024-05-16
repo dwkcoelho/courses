@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+a {
+  font-size: 50px;
+  margin-right: 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.img-perfil {
+  margin-left: 40px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.name-icon {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.phrase {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 1000;
+}
+#zeus {
+  background-color: #1a1a40;
+}
+
+#ares {
+  background-color: #4c0027;
+}
+
+#hades {
+  background-color: #000000;
+}

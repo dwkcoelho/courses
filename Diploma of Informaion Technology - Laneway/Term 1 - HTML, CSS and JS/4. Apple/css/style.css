@@ -1,0 +1,10 @@
+.square {
+  height: 500px;
+  background-color: #000000;
+  margin-bottom: 10px;
+}
+.square2 {
+  height: 500px;
+  background-color: #000000;
+  border: white solid 5px;
+}
