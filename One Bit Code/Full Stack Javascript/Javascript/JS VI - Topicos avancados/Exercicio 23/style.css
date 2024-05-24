@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #f1f5f9;
+    --primary-color: #4dff91;
+    --turn-color: #ff0043;
+  }
+
+  body{
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 12.5rem;
+  }
+
+  form > section {
+    margin: 0 auto;
+    border: #212529 solid 1px;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    background-color: var(--primary-color);
+    padding: 4rem;
+  }
+  
+  label, button {
+    margin-left: 0.6rem;
+  }
+
+  input {
+    border-radius: 1rem;
+    margin-top: .5rem;
+    padding: 0.3rem;
+    width: 15rem;
+  }
+
+  input:hover {
+    background-color: var(--font-color);
+  }
+
+  button {
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background-color: var(--font-color);
+  }
+
+  span{
+    color: var(--turn-color);
+    margin: .75rem;
+    font-size: .75rem;
+  }
+
+  button:hover {
+    background-color: var(--border-color);
+    color: var(--font-color);
+  }
+
+  .error {
+    border: 1px solid --turn-color;
+  }
+
+  .sucess {
+    border: 1px solid --primary-color;
+  }
