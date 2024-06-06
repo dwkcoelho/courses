@@ -5,9 +5,12 @@ const express = require("express");
 //for mongoose driver
 const mongoose = require("mongoose");
 //for models
-const Product = require("./models/product-model.js");
+const Product = require("./models/product.model.js");
+const Platter = require("./models/platter.model.js");
 //for routes
 const productRoutes = require("./routes/product.routes.js");
+const platterRoutes = require("./routes/platter.routes.js");
+
 //app is going to use express
 const app = express();
 //middleware to use JSON format
@@ -19,6 +22,7 @@ const port = 3000;
 // app.use(express.static('public'));
 //middleware to use routes
 app.use("/api/products", productRoutes);
+app.use("/api/platters", platterRoutes);
 
 //mongoose connection code//
 mongoose.connect("mongodb://127.0.0.1:27017/sushiBarRestaurant").then(() => {
