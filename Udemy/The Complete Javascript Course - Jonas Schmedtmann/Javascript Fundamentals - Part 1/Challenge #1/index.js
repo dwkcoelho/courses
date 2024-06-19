@@ -27,4 +27,6 @@ const johnBmi = bmi(92, 1.95)
 const willianBmi = bmi(95, 1.88)
 const paulBmi = bmi(85, 1.76)
 
-console.log(markBmi, johnBmi, willianBmi, paulBmi)
+const markHigherBmi = markBmi > johnBmi
+
+console.log(markBmi, johnBmi, willianBmi, paulBmi, markHigherBmi)
