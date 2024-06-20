@@ -21,7 +21,7 @@
 // HINT 2: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 function tipCalculator(bill) {
-    const tip = bill >= 50 && bill <= 300 ? 20 : 15
+    const tip = bill >= 50 && bill <= 300 ? 15 : 20
     const tipValue = bill * (tip/100)
     const totalValue =  bill + tipValue
 
