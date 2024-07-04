@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World!</title>
+</head>
+<body>
+    <h1>What is your name?</h1>
+    <input id="sorvete" type="text">
+    <div>
+        <p id="answer"></p>
+    </div>
+    <button type="button">Send</button>
+</body>
+<script>
+const sorveteElement = document.getElementById("sorvete");
+
+addEventListener('click', function() {
+    if (sorveteElement) {
+    const answer = document.getElementById("answer");
+    answer.innerText = sorveteElement.value;
+    sorveteElement.value = ''
+} else {
+    console.error("Element with id 'sorvete' not found");
+}
+})
+
+</script>
+</html>
