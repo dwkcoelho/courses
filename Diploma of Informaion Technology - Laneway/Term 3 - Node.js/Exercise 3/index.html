@@ -11,23 +11,41 @@
             justify-content: center;
             align-items: center;
             height: 90vh;
+            font-size: 1.5rem;
         }
         .container{
             color: white;
             align-items: center;
         } 
+        h1{
+            margin-bottom: 0.3rem;
+        }
+        p{
+            margin-bottom: 0.2rem;
+        }
+        input {
+            margin-top: 0rem;
+            width: 20.5rem;
+        }
+        button {
+            margin: 1rem 0;
+            padding: 0.3rem;
+            display: block;
+            width: 21rem;
+            border-radius: 1rem;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>BMI Calculator:</h1>
-        <p>Mass:</p>
-        <input type="text">
+    <form action="" method="post" class="container">
+        <h1>BMI Calculator</h1>
+        <p>Weight:</p>
+        <input type="text" name="weight">
         <p>Height:</p>
-        <input type="text">
-        <button>Calculate</button>
+        <input type="text" name="height">
+        <button type="submit" name="submit">Calculate</button>
         <input type="text" style="display: none;">
-    </div>
+    </form> 
 
     <script>
         
