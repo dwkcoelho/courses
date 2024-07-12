@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("/img/bg_universe.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form, div{
+    color: #f1f5f9;
+    width: 30rem;
+    height: 30rem;
+    display: grid;
+}
+
+label {
+    height: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+    line-height: 2rem;
+}
+
+input{
+    height: 2.3rem;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+button{
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 3rem;
+    background-color: #4dff91;
+}
+
+div{
+    width: 20rem;
+    height: 30rem;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: 7rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.ok{
+    margin-bottom: 10rem;
+}
