@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List!</title>
+</head>
+<body>
+    <head>
+    </head>
+    <main>
+        <section class="form">
+            <h1>To-Do List!</h1>
+            <form action="" method="post">
+                <label for="dueDate">Due Date</label>
+                <input type="text" name="dueDate">
+                <label for="task">Task</label>
+                <input type="text" name="task">
+                <label for="priority">Priority</label>
+                <select name="priority">
+                    <option value="" disabled selected>Select</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button class="btn" type="submit">New Item!</button>
+            </form>
+        </section>
+        <section class="items-list">
+            <h2>Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Done</th>
+                        <th>Due Date</th>
+                        <th>Task</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td>12/06</td>
+                        <td>Buy groceries</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="toDoList.js"></script>
+</body>
+</html>
