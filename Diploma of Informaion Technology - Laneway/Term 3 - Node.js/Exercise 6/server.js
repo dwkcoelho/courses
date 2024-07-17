@@ -7,18 +7,19 @@ app.use(express.static(path.join(__dirname)));
 
 app.get('/', (req, res)  => res.sendFile(path.join(__dirname, "/index.html")));
 
-let toDoList = [];
 
-function createItemRow(dueDate, task, priority) {
-    return `
-        <tr>
-            <td><input type="checkbox"></td>
-            <td>${dueDate}</td>
-            <td>${task}</td>
-            <td>${priority}</td>
-        </tr>
-    `;
-}
+// function createItemRow(dueDate, task, priority) {
+    //     return `
+    //         <tr>
+    //             <td><input type="checkbox"></td>
+    //             <td>${dueDate}</td>
+    //             <td>${task}</td>
+    //             <td>${priority}</td>
+    //         </tr>
+    //     `;
+    // }
+    
+let toDoList = [];
 
 app.post('/', (req, res) => {
     const {dueDate, task, priority} = req.body;
@@ -27,9 +28,9 @@ app.post('/', (req, res) => {
     console.log("New Item Added:", dueDate, task, priority);
     console.log("Updated To-Do List:", toDoList);
 
-    const newRowHtml = createItemRow(dueDate, task, priority);
-    
-    res.send({ html: newRowHtml, list: toDoList });
+    // const newRowHtml = createItemRow(dueDate, task, priority);
+    // html: newRowHtml,
+    res.send({ list: toDoList });
 })
 
 app.listen(3000);
