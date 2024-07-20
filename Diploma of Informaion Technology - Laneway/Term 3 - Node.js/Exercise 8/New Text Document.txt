@@ -1,0 +1,2 @@
+Create a website that capture emails for your marketing campaign and add to
+mailchimp using their API
