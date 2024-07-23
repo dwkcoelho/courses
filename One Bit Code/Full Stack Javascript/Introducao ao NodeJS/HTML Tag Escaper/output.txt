@@ -1,0 +1,1 @@
+&lt;span&gt;It is a &lt;span&gt; tag&lt;/span&gt;
