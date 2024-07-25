@@ -1,66 +1,40 @@
 const https = require('https');
+const axios = require('axios');
+const path = require('node:path')
 const express = require('express');
 const app = express();
-const { mailChimpKey } = require('./mailChimpKey'); // Import the API key from mailChimpKey.js
+const { key } = require('./mailChimpKey'); 
 
-app.get('/send-email', (req, res) => {
-    // Create the JSON payload with the API key and email details
-    const data = JSON.stringify({
-        key: mailChimpKey,
-        message: {
-            from_email: 'dwkcoelho@gmail.com',
-            subject: 'MailChimp',
-            text: 'Welcome to Mailchimp Transactional!',
-            to: [
-                {
-                    email: 'dwkcoelho@gmail.com',
-                    type: 'to'
-                }
-            ]
+
+// app.use(express.static(path.join(__dirname)))
+app.use(express.urlencoded({ extended: true }))
+
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+
+app.post('/', async (req, res) => {
+    const { firstName, lastName, email } = req.body;
+
+    try{
+        const response = await axios.post(
+            "htpps://us14.api.mailchimp.com/3.0/lists/bf260a56fa/members",
+            {
+                email_address: email,
+                status: "pending",
+                merge_fields: {
+                  FNAME: firstName,
+                  LNAME: lastName,
+                },
+            },
+            {
+                headres: {
+                    Authorization: `Bearer ${key}`,
+                    "Content-Type": "application/json"
+                },
+            })
+        } catch(error) {
+            console.log(error)
         }
     });
-
-    // Define the options for the HTTPS request
-    const options = {
-        hostname: 'mandrillapp.com',
-        port: 443,
-        path: '/api/1.0/messages/send',
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Content-Length': data.length
-        }
-    };
-
-    // Create the HTTPS request
-    const reqHttps = https.request(options, (resHttps) => {
-        // Variable to store the response body
-        let responseBody = '';
-
-        // Listen for data events to collect chunks of the response body
-        resHttps.on('data', (chunk) => {
-            responseBody += chunk;
-        });
-
-        // Listen for the end event to log the full response body
-        resHttps.on('end', () => {
-            console.log('Response:', responseBody);
-            res.send('Response: ' + responseBody);
-        });
-    });
-
-    // Listen for error events to handle any errors during the request
-    reqHttps.on('error', (error) => {
-        console.error('Error:', error);
-        res.status(500).send('Error: ' + error.message);
-    });
-
-    // Write the data (JSON payload) to the request body
-    reqHttps.write(data);
-
-    // End the request, signaling that no more data will be sent
-    reqHttps.end();
-});
 
 // Start the Express server
 app.listen(3000, () => {
