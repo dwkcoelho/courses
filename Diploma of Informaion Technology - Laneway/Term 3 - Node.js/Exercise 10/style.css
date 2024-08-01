@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200..700&display=swap');
+
+body{
+    padding: 0;
+    background-image: url(/pic.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.header {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding-left: 1150px;
+    font-family: "Oswald", sans-serif;
+    font-size: 55px;
+}
+
+#profanity-form {
+    padding-left: 1230px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.res {
+    padding-left: 1230px;
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 100;
+
+}
