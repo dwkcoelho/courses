@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Source Code Pro', monospace;
+}
+
+header, footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin: 1.3rem;
+}
+
+.keyword {
+    color: #c678dd; 
+}
+
+.brackets {
+    color:#e5c07b;
+}
+
+.variable {
+    color: #9cdcfe; 
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 1.5rem;
+    text-align: center; 
+}
+
+input {
+    width: 23rem;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    border: 2px solid #333;
+    border-radius: 5px; 
+    background-color: #2d2d2d; 
+    color: #ffffff; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+}
+
+button {
+    width: 5rem; 
+    height: 2.8rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; 
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Source Code Pro', monospace;
+}
+
+button:hover {
+    background-color: #444; 
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #2d2d2d;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.console-success {
+    background-color: green;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.console-error {
+    background-color: red;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.container button {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
+}
+
+.hidden {
+    display: none;
+}
