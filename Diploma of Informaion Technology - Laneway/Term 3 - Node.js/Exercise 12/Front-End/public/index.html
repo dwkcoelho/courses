@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+    <title>Word Filter</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="title-header"><span class="keyword">if</span><span class="brackets">(</span>!<span class="variable">politeEnglish</span><span class="brackets">)&#123</h2>
+        <h2>...</h2>
+    </header>
+    <main>
+        <section>
+            <form id="profanity-form" action="/" method="post">
+                <h1>Enter your message:</h1>
+                <input type="text" id="message" name="message">
+                <button type="submit">Check</button>
+            </form>
+        </section>
+        <section class="container hidden">
+            <h2>We know you can do it mate!</h2>
+            <p class="console-error">This is some text inside the container. It is styled to match the rest of your page.</p><br>
+            <button>Try Again!</button>
+        </section>
+    </main>
+    <footer>
+        <h2 class="title-footer">...</h2>
+        <h2 class="brackets">&#125</h2>
+    </footer>
+    <script src="/public/js/wordFilter.js"></script>
+</body>
+</html>
