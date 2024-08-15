@@ -33,10 +33,10 @@ form.addEventListener('submit', async function(event) {
     if (response.ok) {
         const data = await response.json();
         form.className = 'hidden';
-        if(data.original === data.modified) {
-            isPoliteOrNot('Congratulations, your sentence has no swear words.', '✔ ' + data.original, 'console-success', 'You did it!');
+        if (data.original === data.modified) {
+            isPoliteOrNot(data.phrase, '✔ ' + data.original, 'console-success', 'You did it!');
         } else {
-            isPoliteOrNot('We really believe you can do it, mate!', '✖ ' + data.modified, 'console-error', 'Try Again');
+            isPoliteOrNot(data.phrase, '✖ ' + data.modified, 'console-error', 'Try Again');
         }
     } else {
         console.error('Error:', response.statusText);

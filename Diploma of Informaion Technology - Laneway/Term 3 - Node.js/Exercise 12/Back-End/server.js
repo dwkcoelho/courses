@@ -1,15 +1,21 @@
+//Server
 const { key } = require('./public/js/key');
 const express = require("express");
 const axios = require("axios");
-const cors = require("cors");
 const app = express();
 const port = 3000;
+//Database 
+const mongoose = require("mongoose");
+//Security
+const cors = require("cors");
+// const { v4: uuidv4 } = require('uuid');
 
 app.use(cors({
-  origin: ['http://localhost:3001', 'http://127.0.0.1:3001'],
+  origin: ['http://localhost:3001'],
   methods: ['GET', 'POST']
 }));
 
+// Server
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -62,9 +68,34 @@ app.post("/", async function (req, res) {
         console.error(`Failed to find a rhyme for ${swearWord}:, rhymeError`);
       }
     }
-    res.json({ original: response.data.original, modified: modifiedText });
+
+    let answerPhrasesResponse;
+    const politeParam = response.data.original === modifiedText;
+    
+    try {
+      answerPhrasesResponse = await axios.get('http://localhost:3002/api/answerPhrases', {
+        params: { polite: politeParam },
+      });
+      
+      const answerPhrases = answerPhrasesResponse.data.getAnswerPhrases;
+      const phrases = answerPhrases.filter(p => p.polite === politeParam);
+      console.log(phrases)
+      const randomPhrase = phrases.length > 0 
+        ? phrases[Math.floor(Math.random() * phrases.length)].phrase 
+        : "No phrases found.";
+      
+      res.json({
+        original: response.data.original,
+        modified: modifiedText,
+        phrase: randomPhrase
+      });
+    
+    } catch (error) {
+      console.error("Request failed:", error);
+      res.status(500).send("An error occurred while processing your request.");
+    }
   } catch (error) {
-    console.error("Request failed:", error);
+    console.error("Overall processing failed:", error);
     res.status(500).send("An error occurred while processing your request.");
   }
 });
