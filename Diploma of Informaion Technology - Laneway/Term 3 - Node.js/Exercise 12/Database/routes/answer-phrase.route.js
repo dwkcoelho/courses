@@ -12,6 +12,7 @@ router.post('/createAnswerPhrase', createAnswerPhrase);
 router.get('/', getAnswerPhrases);
 router.get('/:id', getAnswerPhraseById);
 router.patch('/:id', updateAnswerPhraseById);
+router.put('/:id', updateAnswerPhraseById);
 router.delete('/:id', deleteAnswerPhrase);
 
 module.exports = router;

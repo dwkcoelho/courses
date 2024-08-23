@@ -29,6 +29,7 @@ const getAnswerPhraseById = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
 //Update
 const updateAnswerPhraseById = async (req, res) => {
     try {
