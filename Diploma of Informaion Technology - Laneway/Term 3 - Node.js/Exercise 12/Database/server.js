@@ -2,16 +2,17 @@
 const express = require("express");
 const app = express();
 const port = 3002;
-// Security
-const { v4: uuidv4 } = require('uuid');
 // Database
 const mongoose = require("mongoose");
-const AnswerPhrase = require("./models/answer-phrase.model");
-const answerPhraseRoutes = require("./routes/answer-phrase.route");
+const answerPhraseRoutes = require("./routes/answer-phrase.route.js");
+const userRoutes = require("./routes/user.route.js");
 
 app.use(express.json());
-//Database
+
+//Routes
 app.use("/api/answerPhrases", answerPhraseRoutes);
+app.use("/api/users", userRoutes);
+
 //mongoose connection code//
 mongoose.connect("mongodb://127.0.0.1:27017/answerPhrase").then(() => {
   //show DB connection first//

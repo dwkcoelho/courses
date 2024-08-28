@@ -38,8 +38,8 @@ const updateAnswerPhraseById = async (req, res) => {
         if (!updateAnswerPhraseById) {
             res.status(404).json({ message: "Phrase not found" });
         } else {
-            const updatePlatter = await AnswerPhrase.findById(id);
-            res.status(200).json(updatePlatter);
+            const updateAnswerPhrase = await AnswerPhrase.findById(id);
+            res.status(200).json(updateAnswerPhrase);
         }
 
     } catch (error) {
