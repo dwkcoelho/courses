@@ -73,7 +73,7 @@ app.post("/", async function (req, res) {
     const politeParam = response.data.original === modifiedText;
     
     try {
-      answerPhrasesResponse = await axios.get('http://localhost:3002/api/answerPhrases', {
+      answerPhrasesResponse = await axios.get('http://localhost:3002/api/v1/answerPhrases', {
         params: { polite: politeParam },
       });
       

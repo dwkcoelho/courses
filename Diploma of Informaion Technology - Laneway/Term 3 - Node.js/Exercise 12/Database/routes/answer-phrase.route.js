@@ -10,7 +10,7 @@ const {
 } = require('../controllers/answer-phrase.controller.js');
 
 router.post('/createAnswerPhrase', authMiddleware(['admin']), createAnswerPhrase);
-router.get('/', authMiddleware(), getAnswerPhrases);
+router.get('/', getAnswerPhrases);
 router.get('/:id', authMiddleware(), getAnswerPhraseById);
 router.patch('/:id', authMiddleware(['admin']), updateAnswerPhraseById);
 router.put('/:id', authMiddleware(['admin']), updateAnswerPhraseById);

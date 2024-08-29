@@ -10,8 +10,8 @@ const userRoutes = require("./routes/user.route.js");
 app.use(express.json());
 
 //Routes
-app.use("/api/answerPhrases", answerPhraseRoutes);
-app.use("/api/users", userRoutes);
+app.use("/api/v1/answerPhrases", answerPhraseRoutes);
+app.use("/api/v1/users", userRoutes);
 
 //mongoose connection code//
 mongoose.connect("mongodb://127.0.0.1:27017/answerPhrase").then(() => {
