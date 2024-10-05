@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --first-color: #E0E0E0;
+    --second-color: #2ECC71;
+    --font-headings: "Dancing Script", cursive;
+    --font-texts: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #352c2f;
+    color: var(--first-color);
+}
+
+@media (min-width: 320px) {
+    body{
+        padding-top: 40px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #352c2f;
+    }
+    
+    header i {
+        color: #2ECC71;
+        font-size: 30px;
+        margin-right: 5px;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-family: var(--font-headings)
+    }
+    
+    nav a {
+        color: var(--first-color);
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        margin-top: 3rem;
+    }
+
+    #curriculum div:last-child {
+        display: none;
+    }
+
+    #curriculum div:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem;
+        width: 100%;
+        font-family: var(--font-texts);
+        text-align: center;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    #curriculum div:first-child h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    
+    #curriculum div:first-child a {
+        text-decoration: none;
+        border: 1px solid #2ECC71;
+        background-color: #28B463;
+        padding: 0.4rem;
+        border-radius: 8px;
+        color: var(--first-color);
+        font-weight: 700;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    #curriculum div:first-child a:hover {
+        color: #28B463;
+        background-color: #352c2f;
+    }
+
+    #quem-sou-eu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+    }
+    
+    #quem-sou-eu div:first-child,
+    #quem-sou-eu div:last-child {
+        flex: 1;
+    }
+    
+    #quem-sou-eu div:first-child {
+        text-align: center;
+    }
+    
+    #quem-sou-eu img {
+        width: 250px;
+        border: 8px solid #28B463;
+        border-radius: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    #quem-sou-eu h2 {
+        font-size: 2.5rem;
+        font-family: var(--font-headings);
+        text-align: center;
+    }
+    
+    #quem-sou-eu p {
+        font-size: 1rem;
+        text-align: justify;
+        padding: 1.3rem 0.5rem;
+        font-family: var(--font-texts);
+        font-style: italic;
+        font-weight: 500;
+    }
+    
+    #quem-sou-eu span {
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    #habilidades {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem 0;
+    }
+
+    #habilidades h2 {
+        font-family: var(--font-headings);
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #habilidades .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    #habilidades .card {
+        text-align: center;
+        font-family: var(--font-texts);
+    }
+
+    #habilidades .card i {
+        font-size: 7rem;
+        margin-bottom: .5rem;
+    }
+
+    .html {
+        color: #E34F26;
+    }
+
+    .css {
+        color: #1572B6;
+    }
+
+    .js {
+        color: #F7DF1E;
+    }
+
+    .node {
+        color: #339933;
+    }
+    
+    #projetos h2 {
+        font-family: var(--font-headings);
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 0 0 3.5rem 0;
+        padding-top: 5rem;
+    }
+
+    .projetos {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .projeto {
+        margin: 1rem;
+        padding: 1.3rem;
+        border: 1px solid black ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .projeto img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .projeto h3 {
+        padding: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .projeto p {
+        text-align: justify;
+    }
+
+    footer {
+        padding: 2rem 0 1.5rem 0;
+        margin-bottom: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        /* position: relative; */
+    }
+
+    footer ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: 2rem;
+    }
+
+    footer ul li a {
+        color: var(--first-color);
+    }
+
+    footer p {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    /* .footer .copyright {
+        position: absolute;
+        left: 40px;
+        top: 100px;
+    } */
+}
+
+@media (min-width: 768px) {
+    header div {
+        flex: 2;
+    }
+
+    header i {
+        font-size: 40px;
+    }
+
+    header nav {
+        flex: 4;
+    }
+
+    nav ul {
+        font-size: 1.4rem;
+        justify-content: space-around;
+    }
+
+    #curriculum {
+        padding: 2rem;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 2rem;
+    }
+
+    #curriculum div:first-child h2 {
+        font-size: 1.3rem;
+    }
+
+    #curriculum div:first-child a {
+        font-size: 1.3rem;
+        border-radius: 10px;
+    }
+
+    #quem-sou-eu {
+        margin-bottom: 3.5rem;
+    }
+
+    #quem-sou-eu img {
+        width: 300px;
+    }
+    
+    #quem-sou-eu h2,
+    #habilidades h2,
+    #projetos h2 {
+        font-size: 3rem;
+    }
+    
+    #quem-sou-eu p {
+        font-size: 1.3rem;
+        padding: 1.3rem 1rem;
+    }
+
+    #habilidades .cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .projetos {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 1rem;
+    }
+
+    .projeto h3 {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .projeto p {
+        font-size: 1.1rem;
+    }
+
+    footer ul {
+        font-size: 2.3rem;
+        margin-top: 1rem; 
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header nav {
+        flex:2;
+    }
+
+    main {
+        margin-top: 4rem;
+    }
+
+    #curriculum {
+        display: flex;
+        padding: 0;
+    }
+
+    #curriculum div:first-child {
+        position: relative;
+        left: 130px;
+        bottom: 30px;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 1.6rem;
+    }
+
+    #curriculum div:first-child h2 {
+        font-size: 1rem;
+    }
+
+    #curriculum div:first-child a {
+        font-size: 1rem;
+    }
+
+    #curriculum div:last-child {
+        display: block;
+    }
+
+    #curriculum div:last-child img {
+        height: 500px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    header i {
+        font-size: 50px;
+    }
+
+    nav ul {
+        font-size: 1.7rem;
+        justify-content: space-around;
+    }
+
+    main {
+        margin: 2rem 0;
+    }
+
+    #curriculum {
+        padding: 2rem;
+    }
+
+    #curriculum div:first-child {
+        left: 150px;
+        bottom: 40px;
+        gap: 1rem;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 2.3rem;
+    }
+
+    #curriculum div:first-child h2 {
+        font-size: 1.4rem;
+    }
+
+    #curriculum div:first-child a {
+        font-size: 1.5rem;
+    }
+
+    #curriculum div:last-child img {
+        height: 650px;
+        margin-left: 10px;
+    }
+
+    #quem-sou-eu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+    }
+    
+    #quem-sou-eu div:first-child,
+    #quem-sou-eu div:last-child {
+        flex: 1;
+    }
+
+    #quem-sou-eu img {
+        width: 350px;
+    }
+    
+    #quem-sou-eu h2 {
+        font-size: 3.5rem;
+        text-align: start;
+    }
+    
+    #quem-sou-eu p {
+        font-size: 1.3rem;
+        padding: 1.3rem 4rem 1.3rem 0;
+    }
+
+    #habilidades h2,
+    #projetos h2 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    #habilidades .cards {
+        gap: 7rem;
+    }
+
+    #habilidades .card i {
+        font-size: 10rem;
+    }
+
+    #habilidades .card h3 {
+        font-size: 1.5rem;
+    }
+
+    #projetos { 
+        margin-top: 4.5rem;
+    }
+
+    .projetos {
+        margin: 0 2.5rem;
+    }
+
+    .projeto {
+        padding: 2rem;
+    }
+
+    .projeto img {
+        width: 450px;
+        height: 350px;
+        padding: 1.8rem 0 0 0;
+    }
+
+    .projeto h3 {
+        font-size: 1.8rem;
+    }
+
+    .projeto p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        gap: 2.3rem;
+    }
+
+    footer ul {
+        font-size: 2.7rem;
+        margin-top: 1.5rem; 
+        gap: 2.3rem;
+    }
+
+    footer p {
+        font-size: 1.6rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    header i {
+        font-size: 60px;
+    }
+
+    nav ul {
+        font-size: 2.3rem;
+    }
+
+    #curriculum {
+        margin-top: 5rem;
+    }
+
+    #curriculum div:first-child {
+        left: 250px;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 2.9rem;
+    }
+
+    #curriculum div:first-child h2 {
+        font-size: 1.7rem;
+    }
+
+    #curriculum div:first-child a {
+        font-size: 1.8rem;
+        padding: 0.6rem
+    }
+
+    #curriculum div:last-child img {
+        height: 900px;
+    }
+
+    #quem-sou-eu img {
+        width: 525px;
+    }
+    
+    #quem-sou-eu div:last-child {
+        margin-right: 5rem;
+    }
+    
+    #quem-sou-eu h2 {
+        font-size: 6rem;
+    }
+    
+    #quem-sou-eu p {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+    
+    #habilidades h2,
+    #projetos h2 {
+        font-size: 6rem;
+        margin-bottom: 7rem;
+    }
+
+    #habilidades .cards {
+        gap: 12rem;
+    }
+
+    #habilidades .card i {
+        font-size: 15rem;
+    }
+
+    #habilidades .card h3 {
+        font-size: 2.5rem;
+    }
+
+    #projetos { 
+        margin-top: 8rem;
+    }
+
+    .projetos {
+        margin: 0 3.5rem;
+    }
+    
+    .projeto {
+        padding: 3.2rem;
+    }
+
+    .projeto img {
+        width: 650px;
+        height: 450px;
+    }
+
+    .projeto h3 {
+        font-size: 2.7rem;
+        padding-bottom: 2rem;
+    }
+
+    .projeto p {
+        font-size: 2.1rem;
+    }
+
+    footer {
+        gap: 3rem;
+    }
+
+    footer ul {
+        font-size: 4.5rem;
+        margin-top: 1rem; 
+        gap: 2.6rem;
+    }
+
+    footer p {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 2560px) {
+
+    header i {
+        font-size: 80px;
+    }
+
+    header ul {
+        font-size: 2.9rem;
+
+    }
+
+    #curriculum div:first-child{
+        left: 325px;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 3.5rem;
+    }
+
+    #curriculum div:first-child h2 {
+        font-size: 2rem;
+        margin: 0.3rem 0 0.7rem 0;
+    }
+    
+    #curriculum div:first-child a {
+        font-size: 2.3rem;
+        border-radius: 15px;
+    }
+    
+    #curriculum div:last-child img {
+        height: 1260px;
+    }    
+
+    #quem-sou-eu {
+        margin: 15rem 0 11.5rem 0;
+    }
+    
+    #quem-sou-eu div:first-child {
+        text-align: center;
+    }
+    
+    #quem-sou-eu img {
+        width: 700px;
+    }
+    
+    #quem-sou-eu div:last-child {
+        margin-right: 15rem;
+    }
+    
+    #quem-sou-eu h2 {
+        font-size: 9rem;
+    }
+    
+    #quem-sou-eu p {
+        font-size: 2.5rem;
+        padding: 2rem 0;
+    }
+
+    #habilidades h2,
+    #projetos h2 {
+        font-size: 9rem;
+        margin-bottom: 8rem;
+    }
+
+    #habilidades {
+        padding-top: 3.5rem;
+    }
+
+    #habilidades .cards {
+        gap: 15rem;
+    }
+
+    #habilidades .card i {
+        font-size: 19rem;
+    }
+
+    #habilidades .card h3 {
+        font-size: 3rem;
+    }
+
+    #projetos { 
+        margin-top: 12rem;
+    }
+
+    .projetos {
+        margin: 0 4.5rem;
+        gap: 6rem;
+    }
+    
+    .projeto {
+        padding: 4rem;
+    }
+
+    .projeto img {
+        width: 750px;
+        height: 550px;
+        padding-bottom: 1rem;
+    }
+
+    .projeto h3 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .projeto p {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        gap: 3rem;
+    }
+
+    footer ul {
+        font-size: 6rem;
+        margin-top: 10rem; 
+        gap: 3rem;
+    }
+
+    footer p {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 2990px) {
+
+    #curriculum div:first-child {
+        bottom: 100px;
+    }
+
+    #curriculum div:first-child h1 {
+        font-size: 4.5rem;
+    }
+    
+    #curriculum div:first-child h2 {
+        font-size: 3rem;
+        margin: 0.5rem 0 1.2rem 0;
+    }
+    
+    #curriculum div:first-child a {
+        font-size: 2.5rem;
+    }
+}
