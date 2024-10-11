@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ListRestaurant from './ListRestaurant';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App image="logo192.png" header="Resturant 1" phone="1111-1111"/>
+    <App image="logo512.png" header="Resturant 2" phone="2222-2222"/>
+    <App image="logo192.png" header="Resturant 3" phone="3333-3333"/> */}
+    <ListRestaurant/>
   </React.StrictMode>
 );
 
