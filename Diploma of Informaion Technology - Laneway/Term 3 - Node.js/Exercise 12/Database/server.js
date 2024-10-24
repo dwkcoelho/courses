@@ -9,11 +9,11 @@ const userRoutes = require("./routes/user.route.js");
 
 app.use(express.json());
 
-//Routes
+// Routes
 app.use("/api/v1/answerPhrases", answerPhraseRoutes);
 app.use("/api/v1/users", userRoutes);
 
-//mongoose connection code//
+// Mongoose
 mongoose.connect("mongodb://127.0.0.1:27017/answerPhrase").then(() => {
   //show DB connection first//
   console.log("Connected to the database");
